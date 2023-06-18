@@ -1,1 +1,123 @@
-hello
+"""data = [{
+    "Name" : "Saweri",
+    "Class" : "IOT"
+},{
+    "Name" : "Muneeb",
+    "Course" : "IOT"
+}]
+print(data[0]["Name"])
+
+
+
+
+dic1 = {
+    "Name" : ["Muneeb","Bilal","Sawera"],
+    "Class" : "IOT"
+}
+print(dic1["Class"][1])
+
+
+class Calculator:
+  def __init__(self, value1, value2, value3):
+    self.vala = value1
+    self.valb = value2
+    self.valc = value3
+
+  def myfunc(self):
+    print("Hello my name is " + self.vala)
+
+p1 = Calculator("John", "af","fa")
+p1.myfunc()
+
+"""
+
+class cal():
+    def __init__(self,a,b):
+        self.a = a
+        self.b = b
+    def add(self):
+        return self.a + self.b
+    def sub(self):
+        return self.a - self.b
+    def multiply(self):
+        return self.a * self.b
+    def divide(self):
+        return self.a / self.b
+
+a = int(input('Enter First number : '))
+b = int(input('Enter Second number : '))        
+obj=cal(a,b)
+while True:
+    def menu():
+        x = ('1. Add \n2. Sub \n3. Multiply \n4. Divide') 
+        print(x)
+    menu()
+    choice = int(input('Please select one of the following : ')) 
+    if choice == 1:
+        print("Result: ",obj.add())
+    elif choice == 2:
+        print("Result: ",obj.sub())
+    elif choice == 3:
+        print("Result: ",obj.multiply())    
+    elif choice == 4:
+        print("Result: ",obj.divide())
+    elif choice == 0:
+        print('Again try one of the following')
+        break
+    else:
+        print('Invalid option') 
+        break       
+print()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""def calculator(first_num , second_num , operator):
+  if operator=="A":
+    sum = first_num + second_num
+    print(sum)
+
+  elif operator=="S":
+    sum = first_num - second_num
+    print(sum)
+
+  elif operator=="M":
+    sum = first_num * second_num
+    print(sum)
+
+  elif operator=="D":
+    sum = first_num / second_num
+    print(sum)
+
+  elif operator=="Mod":
+    sum = first_num % second_num
+    print(sum)
+
+a=int(input("Enter first number: "))
+b=int(input("Enter second number: "))
+c=input("Enter operator (A,S,M,D,Mod): ")
+calculator(a,b,c)"""
